@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage x:Class="GliderSchool.Content.FlyEventDetailView"
              xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <Label HorizontalOptions="Center"
-           Text="details und so"
-           VerticalOptions="Center" />
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding FlyEvent.Title}">
+    <StackLayout Padding="10">
+        <Label Text="{Binding FlyEvent.Title}" VerticalOptions="Center" />
+        <Label Text="Beschreibung" VerticalOptions="Center" />
+        <Label Text="{Binding FlyEvent.Description}" VerticalOptions="Center" />
+        <Label Text="Bemerkungen" VerticalOptions="Center" />
+        <Label Text="{Binding FlyEvent.Remarks}" VerticalOptions="Center" />
+    </StackLayout>
+
 </ContentPage>

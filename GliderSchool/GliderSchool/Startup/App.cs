@@ -33,7 +33,7 @@ namespace GliderSchool
                     .PerRequest<FlyEventDetailViewModel>()
                     .PerRequest<FlyEventListViewModel>();
 
-                adapter.NavigateToViewModelAsync<FlyEventListViewModel>();
+                adapter.NavigateToViewModelAsync<FlyEventListViewModel>().Wait();
 
                 Initialize();
 

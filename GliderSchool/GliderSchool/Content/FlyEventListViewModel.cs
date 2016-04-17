@@ -48,7 +48,7 @@ namespace GliderSchool.Content
 
         public async void SelectFlyEvent()
         {
-            await navigationService.NavigateToViewModelAsync<FlyEventDetailViewModel>();
+            await navigationService.NavigateToViewModelAsync<FlyEventDetailViewModel>(SelectedFlyEvent);
         }
 
     }

@@ -11,6 +11,17 @@ namespace GliderSchool.Content
 {
     public class FlyEventDetailViewModel : ViewModelBase
     {
+        public string Test
+        {
+            get;
+            set;
+        }
+
+        public FlyEvent FlyEvent {
+            get;
+            set;
+        }
+
         private readonly IMasterNavigationService navigationService;
         public FlyEventDetailViewModel(IMasterNavigationService navigationService)
         {
