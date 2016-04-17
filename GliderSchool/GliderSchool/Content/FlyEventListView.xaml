@@ -5,7 +5,6 @@
              xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
              Title="Fly events">
     <StackLayout>
-        <Label Text="Test" />
         <ListView IsPullToRefreshEnabled="True"
                   IsRefreshing="{Binding IsLoading}"
                   ItemsSource="{Binding FlyEvents}"

@@ -6,19 +6,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
 namespace GliderSchool
 {
-    public class App : FormsApplication
+    public partial class App : FormsApplication
     {
         private readonly SimpleContainer container;
         private readonly NavigationPage navigationPage = new NavigationPage();
 
         public App(SimpleContainer container)
         {
-
+            
             try
             {
                 this.container = container;
@@ -63,7 +64,6 @@ namespace GliderSchool
         {
             // Handle when your app resumes
         }
-
 
     }
 }
