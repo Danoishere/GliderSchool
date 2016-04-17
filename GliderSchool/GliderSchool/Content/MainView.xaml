@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage x:Class="GliderSchool.Content.MainView"
+                  xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:GliderSchool.Content;assembly=GliderSchool"
+                  Title="Glider School">
+    <MasterDetailPage.Master>
+        <local:NavigationView BindingContext="{Binding Navigation}" />
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage BindingContext="{Binding ActiveScreen}">
+            <ContentPage>
+                <Label Text="X" />
+            </ContentPage>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

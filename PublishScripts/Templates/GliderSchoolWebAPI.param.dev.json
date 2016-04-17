@@ -1,0 +1,32 @@
+{
+  "siteName": {
+    "value": "gliderschool"
+  },
+  "hostingPlanName": {
+    "value": "Default1"
+  },
+  "siteLocation": {
+    "value": "West Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "serverName": {
+    "value": "gliderschool"
+  },
+  "serverLocation": {
+    "value": "West Europe"
+  },
+  "administratorLogin": {
+    "value": "gliderschool"
+  },
+  "administratorLoginPassword": {
+    "value": "Magiclift16"
+  },
+  "databaseName": {
+    "value": "gliderschool_db"
+  }
+}

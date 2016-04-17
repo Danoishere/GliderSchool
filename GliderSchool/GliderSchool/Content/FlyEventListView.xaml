@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="GliderSchool.Content.FlyEventListView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
+             Title="Fly events">
+    <StackLayout>
+        <Label Text="Test" />
+        <ListView IsPullToRefreshEnabled="True"
+                  IsRefreshing="{Binding IsLoading}"
+                  ItemsSource="{Binding FlyEvents}"
+                  SelectedItem="{Binding SelectedFlyEvent}"
+                  cal:Message.Attach="[Event Refreshing] = [Action RefreshFlyEvents];[Event ItemTapped]=[Action SelectFlyEvent]">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Detail="{Binding Description}" Text="{Binding Title}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
