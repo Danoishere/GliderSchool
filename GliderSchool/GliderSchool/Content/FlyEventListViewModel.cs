@@ -1,5 +1,7 @@
 ﻿using Caliburn.Micro;
 using Caliburn.Micro.Xamarin.Forms;
+using GliderSchool.Common;
+using GliderSchool.DataClient;
 using GliderSchool.Startup;
 using System;
 using System.Collections.Generic;
@@ -27,12 +29,18 @@ namespace GliderSchool.Content
             base.OnActivate();
         }
 
-        protected override void OnInitialize()
+        private async Task LoadData()
         {
             base.OnInitialize();
-            FlyEvents.Add(new FlyEvent { Title = "Engstlegenalp Überflug", Description = "Wir gehen auf die Engstlegenalp und machen einen tollen Tag", Remarks = "Warme kleider mitnehmen" });
-            FlyEvents.Add(new FlyEvent { Title = "Hummel Abendflug", Description = "Wir gehen auf den Hummel und machen einen tollen Tag", Remarks = "Testmaterial dabei" });
-            FlyEvents.Add(new FlyEvent { Title = "Rigi Soaring", Description = "Wir gehen auf die Rigi und soaren", Remarks = "Warme kleider mitnehmen" });
+            var dataClient = new DataClientBase<FlyEvent>("api/FlyEvent");
+            var result = await dataClient.GetAll();
+            FlyEvents.Clear();
+            FlyEvents.AddRange(result);
+        }
+
+        protected override async void OnInitialize()
+        {
+            await LoadData();
         }
 
         public void Init()
@@ -42,7 +50,7 @@ namespace GliderSchool.Content
 
         public async void  RefreshFlyEvents()
         {
-            await Task.Delay(1000);
+            await LoadData();
             IsLoading = false;
         }
 

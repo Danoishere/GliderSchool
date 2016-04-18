@@ -12,7 +12,10 @@
                   cal:Message.Attach="[Event Refreshing] = [Action RefreshFlyEvents];[Event ItemTapped]=[Action SelectFlyEvent]">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Detail="{Binding Description}" Text="{Binding Title}" />
+                    <TextCell Detail="{Binding Description}"
+                              DetailColor="Gray"
+                              Text="{Binding Title}"
+                              TextColor="{StaticResource MainTheme}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

@@ -4,10 +4,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="{Binding FlyEvent.Title}">
     <StackLayout Padding="10">
-        <Label Text="{Binding FlyEvent.Title}" VerticalOptions="Center" />
-        <Label Text="Beschreibung" VerticalOptions="Center" />
+        <Label FontAttributes="Bold"
+               Text="{Binding FlyEvent.Title}"
+               VerticalOptions="Center" />
+        <Label Style="{StaticResource InfoLabel}"
+               Text="Beschreibung"
+               VerticalOptions="Center" />
         <Label Text="{Binding FlyEvent.Description}" VerticalOptions="Center" />
-        <Label Text="Bemerkungen" VerticalOptions="Center" />
+        <Label Style="{StaticResource InfoLabel}"
+               Text="Bemerkungen"
+               VerticalOptions="Center" />
         <Label Text="{Binding FlyEvent.Remarks}" VerticalOptions="Center" />
     </StackLayout>
 

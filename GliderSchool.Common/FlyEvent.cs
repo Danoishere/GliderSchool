@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace GliderSchool
+namespace GliderSchool.Common
 {
     public class FlyEvent
     {

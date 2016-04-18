@@ -1,5 +1,6 @@
 ﻿using Caliburn.Micro;
 using Caliburn.Micro.Xamarin.Forms;
+using GliderSchool.Common;
 using GliderSchool.Startup;
 using System;
 using System.Collections.Generic;

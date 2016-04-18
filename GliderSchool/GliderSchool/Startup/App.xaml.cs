@@ -1,6 +1,7 @@
 ﻿using Caliburn.Micro;
 using Caliburn.Micro.Xamarin.Forms;
 using GliderSchool.Content;
+using GliderSchool.DataClient;
 using GliderSchool.Startup;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,9 @@ namespace GliderSchool
 
         public App(SimpleContainer container)
         {
-            
+
+            InitializeComponent();
+
             try
             {
                 this.container = container;
@@ -38,6 +41,7 @@ namespace GliderSchool
 
                 Initialize();
 
+                var x = Resources;
 
                 DisplayRootViewFor<MainViewModel>();
             }
@@ -52,7 +56,7 @@ namespace GliderSchool
 
         protected override void OnStart()
         {
-
+            ServiceConfig.BaseAddress = "http://gliderschool.azurewebsites.net/";
         }
 
         protected override void OnSleep()

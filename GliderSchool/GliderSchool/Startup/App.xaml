@@ -1,14 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<cal:FormsApplication x:Class="GliderSchool.Startup.App"
+<cal:FormsApplication x:Class="GliderSchool.App"
                       xmlns="http://xamarin.com/schemas/2014/forms"
                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                       xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms">
     <cal:FormsApplication.Resources>
         <ResourceDictionary>
-
+            <Color x:Key="MainTheme">#FF00AF66</Color>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+            <Style TargetType="TextCell">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="DetailColor" Value="Gray" />
+            </Style>
             <Style TargetType="StackLayout">
                 <Setter Property="BackgroundColor" Value="White" />
             </Style>
+            <Style x:Key="InfoLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="Gray" />
+            </Style>
+
         </ResourceDictionary>
     </cal:FormsApplication.Resources>
 </cal:FormsApplication>

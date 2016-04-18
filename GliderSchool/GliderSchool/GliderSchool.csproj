@@ -48,7 +48,6 @@
       <DependentUpon>NavigationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Content\NavigationViewModel.cs" />
-    <Compile Include="FlyEvent.cs" />
     <Compile Include="Content\FlyEventListView.xaml.cs">
       <DependentUpon>FlyEventListView.xaml</DependentUpon>
     </Compile>
@@ -121,6 +120,16 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GliderSchool.Common\GliderSchool.Common.csproj">
+      <Project>{f27a2efa-acab-4e15-b5be-b98d80b131bd}</Project>
+      <Name>GliderSchool.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GliderSchool.DataClient\GliderSchool.DataClient.csproj">
+      <Project>{79506631-036e-40b8-9051-c71135c3309e}</Project>
+      <Name>GliderSchool.DataClient</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
