@@ -6,14 +6,17 @@
              Title="Glider School">
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand">
-            <ListView ItemsSource="{Binding Navigation}"
+            <Grid BackgroundColor="{StaticResource MainTheme}">
+                <Image Source="Logo.png" />
+            </Grid>
+            <ListView cal:Message.Attach="[Event ItemTapped] = [Action SelectNavItem]"
+                      ItemsSource="{Binding Navigation}"
                       SelectedItem="{Binding SelectedNavigationItem}"
                       SeparatorVisibility="None"
-                      VerticalOptions="FillAndExpand"
-                      cal:Message.Attach="[Event ItemTapped] = [Action SelectNavItem]">
+                      VerticalOptions="FillAndExpand">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Title}" cal:View.Model="{Binding}" />
+                        <TextCell cal:View.Model="{Binding}" Text="{Binding Title}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

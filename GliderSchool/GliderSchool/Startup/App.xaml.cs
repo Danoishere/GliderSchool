@@ -25,6 +25,8 @@ namespace GliderSchool
 
             try
             {
+                
+
                 this.container = container;
 
                 var adapter = new MasterNavigationService(navigationPage);

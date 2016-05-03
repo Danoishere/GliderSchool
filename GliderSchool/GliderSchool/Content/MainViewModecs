@@ -1,0 +1,21 @@
+﻿using Caliburn.Micro;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GliderSchool.Content
+{
+    public class MainViewModel : Conductor<IScreen>
+    {
+        public FlyEventListViewModel FlyEventList { get; set; } = IoC.Get<FlyEventListViewModel>();
+
+        public MainViewModel()
+        {
+            FlyEventList.ConductWith(this);
+        }
+
+        
+    }
+}

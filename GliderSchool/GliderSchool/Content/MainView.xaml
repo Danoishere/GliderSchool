@@ -3,8 +3,7 @@
                   xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:local="clr-namespace:GliderSchool.Content;assembly=GliderSchool"
-                  Title="Glider School"
-                  Icon="Logo.png">
+                  Title="Glider School">
     <MasterDetailPage.Master>
         <local:NavigationView BindingContext="{Binding Navigation}" />
     </MasterDetailPage.Master>
