@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GliderSchool.Droid", "GliderSchool\GliderSchool.Droid\GliderSchool.Droid.csproj", "{A5F260F7-1764-4DFE-973C-44C68E51D919}"
 EndProject
@@ -91,6 +91,7 @@ Global
 		{8163AFD2-5027-4DB9-90B0-F95F90FE205B}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
 		{8163AFD2-5027-4DB9-90B0-F95F90FE205B}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
 		{8163AFD2-5027-4DB9-90B0-F95F90FE205B}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{8163AFD2-5027-4DB9-90B0-F95F90FE205B}.Debug|Any CPU.Deploy.0 = Debug|iPhone
 		{8163AFD2-5027-4DB9-90B0-F95F90FE205B}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{8163AFD2-5027-4DB9-90B0-F95F90FE205B}.Debug|iPhone.Build.0 = Debug|iPhone
 		{8163AFD2-5027-4DB9-90B0-F95F90FE205B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator

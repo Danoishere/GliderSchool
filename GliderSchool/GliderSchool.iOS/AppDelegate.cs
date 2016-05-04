@@ -5,7 +5,6 @@ using System.Linq;
 using Foundation;
 using UIKit;
 using Caliburn.Micro;
-using PushNotification.Plugin;
 using GliderSchool.Common;
 
 namespace GliderSchool.iOS
@@ -26,7 +25,6 @@ namespace GliderSchool.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            CrossPushNotification.Initialize<CrossPushNotificationListener>();
             LoadApplication(new App(IoC.Get<SimpleContainer>()));
 
             return base.FinishedLaunching(app, options);
